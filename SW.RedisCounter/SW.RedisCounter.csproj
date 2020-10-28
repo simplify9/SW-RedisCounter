@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageId>SimplyWorks.RedisCounter</PackageId>
+    <Authors>Simplify9</Authors>
+    <Product>SimplyWorks.RedisCounter</Product>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/simplify9/RedisCounter</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/simplify9/RedisCounter</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="SimplyWorks.PrimitiveTypes" Version="2.0.98" />
+    <PackageReference Include="StackExchange.Redis" Version="2.1.58" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Include="..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
