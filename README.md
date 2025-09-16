@@ -151,7 +151,7 @@ public class RedisOptions
 
 ## Target Framework
 
-- .NET Core 3.1
+- .NET 8
 
 ## License
 
