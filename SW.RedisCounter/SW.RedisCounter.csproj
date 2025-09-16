@@ -1,14 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <PackageId>SimplyWorks.RedisCounter</PackageId>
     <Authors>Simplify9</Authors>
     <Product>SimplyWorks.RedisCounter</Product>
+    <Description>Redis-based atomic counters with environment-aware key namespacing for distributed .NET applications. Provides thread-safe increment/reset operations with easy ASP.NET Core integration. See GitHub repository for full documentation and usage examples.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageProjectUrl>https://github.com/simplify9/RedisCounter</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/simplify9/RedisCounter</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/simplify9/SW-RedisCounter</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/simplify9/SW-RedisCounter</RepositoryUrl>
+    <PackageTags>redis;counter;atomic;distributed;aspnetcore;caching</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,13 +20,17 @@
 
 
   <ItemGroup>
-    <PackageReference Include="SimplyWorks.PrimitiveTypes" Version="2.0.98" />
-    <PackageReference Include="StackExchange.Redis" Version="2.1.58" />
+    <PackageReference Include="SimplyWorks.PrimitiveTypes" Version="8.1.2" />
+    <PackageReference Include="StackExchange.Redis" Version="2.9.17" />
   </ItemGroup>
 
 
   <ItemGroup>
     <None Include="..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
