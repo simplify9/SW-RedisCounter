@@ -20,8 +20,8 @@
 
 
   <ItemGroup>
-    <PackageReference Include="SimplyWorks.PrimitiveTypes" Version="8.1.2" />
-    <PackageReference Include="StackExchange.Redis" Version="2.9.17" />
+    <PackageReference Include="SimplyWorks.PrimitiveTypes" Version="8.1.5" />
+    <PackageReference Include="StackExchange.Redis" Version="2.13.17" />
   </ItemGroup>
 
 
