@@ -32,12 +32,11 @@ permissions:
 
 # One billed run per PR. Safe to cancel: verification is read-only and deploys nothing.
 concurrency:
-  group: verify-${{ github.event.pull_request.number || github.ref }}${{ github.event.action == 'edited' && !github.event.changes.base && format('-edit-{0}', github.run_id) || '' }}
+  group: verify-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
   verify:
-    if: github.event.action != 'edited' || github.event.changes.base
     uses: simplify9/.github/.github/workflows/verify.yml@main
     with:
       stack: dotnet-library
