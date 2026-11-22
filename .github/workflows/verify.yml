@@ -41,7 +41,7 @@ jobs:
     with:
       stack: dotnet-library
       known-failing: ''
-      contract-deadline: '2026-12-21'
+      contract-deadline: '2027-01-10'
     secrets:
       dependabot-alerts-token: ${{ secrets.DEPENDABOT_ALERTS_TOKEN }}
       nuget-restore-token: ${{ secrets.NUGET_PACKAGE_PAT }}
